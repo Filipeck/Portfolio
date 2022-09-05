@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Filipe Cayres">
     <meta name="description" content="ideia de página login da Netflix">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/favicon-16x16.png" type="image/x-icon">    
-    <title>Netflix</title>
+    <title>Netflix - Login</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="./assets/img/netflixlogo.png" alt="Logo da Netflix">
+            </a>
+        </div>
+    </header>
+
+    <main class="login-body">
+        <div class="login-box">
+            <h2>Entrar</h2>
+            <form>
+                <div class="input-box">
+                    <input required type="email" placeholder="E-mail ou número de telefone" autofocus>
+                </div>
+
+                <div class="input-box">
+                    <input required type="password" placeholder="Senha">
+                </div>
+
+                <div>
+                    <button class="submit">Entrar</button>
+                </div>
+            </form>
+
+            <div class="support">
+                <div class="remember">
+                    <span><input type="checkbox" style="margin: 0; padding: 0; height: 13px; "></span>
+                    <span>Lembre-se de mim</span>
+                </div>
+                <div class="help">
+                    <a href="#">
+                        Precisa de ajuda?
+                    </a>
+                </div>
+            </div>
+
+            <div class="login-footer">
+                <div class="login-facebook">
+                    <span><img height="20px" src="./assets/img/Facebook_logo.png" alt="Logo Facebook"></span>
+                    <span><a href="#">Conectar com Facebook</a></span>
+                </div>
+                
+                <div class="signup">
+                    Novo por aqui? <a href="#">Assine agora.</a>
+                </div>
+
+                <div class="terms">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais.</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
