@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spline Sans Mono', monospace;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(150deg, #473ad5, #dfca3f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+#relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .75);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+#relogio span{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#relogio span.tempo{
+    font-size: 10px;
+}
