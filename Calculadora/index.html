@@ -5,10 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Filipe Cayres">
-    <meta name="description" content="">
-    <title>Calculadora</title>
+    <meta name="description" content="Webpage contendo uma Calculadora simples para a realização de cálculos matemáticos básicos">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Calculadora Matemática</title>
 </head>
 <body>
-    
+    <div class="fundo">
+        <h2>Filipe Cayres</h2>
+        <main class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao">&#8656;</button></td>
+                    <td><button class="botao">&divide;</button></td>
+                    <td><button class="botao">&lowast;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao">1</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">3</button></td>
+                    <td rowspan="2"><button class="botao igual">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao zero">0</button></td>
+                    <td><button class="botao">.</button></td>                    
+                </tr>
+            </table>
+        </main>
+    </div>
 </body>
 </html>
