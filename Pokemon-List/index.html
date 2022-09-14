@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon List</title>
+    <meta name="author" content="Filipe Cayres">
+    <meta name="description" content="">
+    <title>Pokémon Catalog</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+    <main class="container">
+        <h1>Informe o <span>nome</span> ou <span>número</span> do Pokémon desejado e a aplicação retornará a
+            <span>foto</span> e <span>tipo</span> do Pokémon.
+        </h1>
+        <hr>
+        <figure class="imagem">
+            <img src="./assets/image/pokemon-logo.png" alt="Logo Pokémon">
+        </figure>
+        <form class="group-form">
+            <label>Nome ou número do Pokémon:</label>
+            <input type="text" placeholder="Exemplo: Pikachu ou 25" id="pokename" required>
+            <input type="submit" value="BUSCAR">
+        </form>
+
+        <section id="imgPokemon">          
+        </section>
+
+        <div id="content">
+            ...
+        </div>
+    </main>
+
 </body>
+
 </html>
