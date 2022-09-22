@@ -36,7 +36,10 @@ formulario.addEventListener('submit', function(e){
             imagem.innerHTML = "<img src='" + data.sprites.front_default + "'><img src='" + data.sprites.back_default + "'>"
         })
         .catch(function(err){
-            console.log(err)
+            if(err){
+            html = 'Pokémon não encontrado! 😒'
+        }
+            resposta.innerHTML = html
         })
 
     
