@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cronômetro</title>
 </head>
-<body>
-    <main>
-        <h1 id="time">00:00:00</h1>
-        <button id="start-btn" onclick="start()">Iniciar</button>
-        <button id="pause-btn" onclick="pause()">Pausar</button>
-        <button id="stop-btn" onclick="stoP()">Parar</button>        
-    </main>
 
+<body>    
+    <main>
+        <div>
+            <span id="hour">00</span><span class="dois-pontos">:</span><span id="minute">00</span><span class="dois-pontos">:</span><span id="second">00</span><span class="dois-pontos">:</span><span id="millisecond">000</span>
+        </div>
+
+        <br>
+
+        <button type="button" name="start" id="start-btn">start</button>
+        <button type="button" name="pause" id="pause-btn">pause</button>
+        <button type="button" name="reset" id="stop-btn">reset</button>
+    </main>
+    
     <script src="./assets/script/script.js"></script>
 </body>
+
 </html>

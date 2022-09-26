@@ -1,40 +1,55 @@
-var sec=0
-var min=0
-var hr=0
-var interval
+"use strict";
 
-function twoDigits(digit){
-if(digit<10){
-    return('0'+digit)
-}else{
-    return(digit)
-}
-}
+let hour = 0;
+let minute = 0;
+let second = 0;
+let millisecond = 0;
 
-function start(){    
-    interval = setInterval(watch, 1000)
-}
+let cron;
 
-function pause(){
-    clearInterval(interval)
-}
+document.form_main.start.onclick = () => start();
+document.form_main.pause.onclick = () => pause();
+document.form_main.reset.onclick = () => reset();
 
-function stoP(){
-    clearInterval(interval)
-    sec=0
-    min=0
-    document.getElementById('time').innerText='00:00:00'
-}
+function start() {
+    pause();
+    cron = setInterval(() => { timer(); }, 10);
+  }
+  
+  function pause() {
+    clearInterval(cron);
+  }
+  
+  function reset() {
+    hour = 0;
+    minute = 0;
+    second = 0;
+    millisecond = 0;
+    document.getElementById('hour').innerText = '00';
+    document.getElementById('minute').innerText = '00';
+    document.getElementById('second').innerText = '00';
+    document.getElementById('millisecond').innerText = '000';
+  }
 
-function watch(){
-    sec++
-    if(sec==60){
-        min++
-        sec=0
-        if(min==60){
-            min=0
-            hr++
-        }
+  function timer() {
+    if ((millisecond += 10) == 1000) {
+      millisecond = 0;
+      second++;
     }
-    document.getElementById('time').innerHTML=twoDigits(hr) +':' + twoDigits(min) + ':' + twoDigits(sec)
-}
+    if (second == 60) {
+      second = 0;
+      minute++;
+    }
+    if (minute == 60) {
+      minute = 0;
+      hour++;
+    }
+    document.getElementById('hour').innerText = returnData(hour);
+    document.getElementById('minute').innerText = returnData(minute);
+    document.getElementById('second').innerText = returnData(second);
+    document.getElementById('millisecond').innerText = returnData(millisecond);
+  }
+  
+  function returnData(input) {
+    return input > 10 ? input : `0${input}`
+  }
