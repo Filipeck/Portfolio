@@ -6,7 +6,7 @@
 
 
 
-<div align="center"><a href="https://pokemon-list-fck.netlify.app" target="_blank"><img src="./pokeBG.jpg" width="75%"></a></div>
+<div align="center"><a href="https://pokemon-list-fck.netlify.app"><img src="./pokeBG.jpg" width="75%"></a></div>
 
 
 
