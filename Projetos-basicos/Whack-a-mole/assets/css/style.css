@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 html, body{
     height: 100%;
@@ -59,7 +60,7 @@ body{
     position: absolute;
     top: 100px;
     left: 100px;
-    background-image: url('assets/hammer.png');
+    background-image: url('../hammer.png');
     background-size: 100% 100%;
     transform: translate(-20%, -20%);
     transition: transform .1s;
