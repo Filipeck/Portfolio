@@ -70,6 +70,7 @@ button{
     height: 150px;
     border-radius: 5px;
     font: italic 1.5rem serif;
+    text-align: center;
     box-sizing: 0 0 10px black;
     background-color:#000 ;
     color: rgb(255, 198, 0);
