@@ -1,5 +1,4 @@
-const ligar = document.getElementById('ligar');
-const desligar = document.getElementById('desligar');
+const ligarDesligar = document.getElementById('ligarDesligar');
 const lamp = document.getElementById('lampada');
 
 function isBroken() {
@@ -22,8 +21,17 @@ function lampBroken() {
     lampada.src = './images/quebrada.jpg'
 }
 
-ligar.addEventListener('click', lampOn);
-desligar.addEventListener('click', lampOff);
+function lampOnOff(){
+    if(ligarDesligar.textContent == 'Ligar'){
+        lampOn();
+        ligarDesligar.textContent = 'Desligar';
+    }else{
+        lampOff();
+        ligarDesligar.textContent = 'Ligar';
+    }
+}
+
+ligarDesligar.addEventListener('click', lampOnOff);
 lamp.addEventListener('mouseover', lampOn);
 lamp.addEventListener('mouseleave', lampOff);
 lamp.addEventListener('dblclick', lampBroken);
