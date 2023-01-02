@@ -33,4 +33,11 @@ const previous = () => {
     items = document.querySelectorAll('.item');
 }
 
+const next = () => {
+    const lastItem = items[items.length - 1];
+    containerItems.insertBefore(lastItem, items[0]);
+    items = document.querySelectorAll('.item');
+}
+
 document.querySelector('#previous').addEventListener('click', previous);
+document.querySelector('#next').addEventListener('click', next);
