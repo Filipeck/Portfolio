@@ -39,5 +39,5 @@ const next = () => {
     items = document.querySelectorAll('.item');
 }
 
-document.querySelector('#previous').addEventListener('click', previous);
-document.querySelector('#next').addEventListener('click', next);
+document.querySelector('#previous').addEventListener('click', next);
+document.querySelector('#next').addEventListener('click', previous);
